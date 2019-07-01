@@ -1,7 +1,9 @@
-## Custom Django Project: Homies
+## Custom Django Project: Quizzy (Quiz + Easy)
 
-Web application that allows future roomates to choose house/apartment together. The center of the app is a listed home/apartment. Potential renter reserves the house and within a week he should find other roomate(s). The app allows to see the listings, current roomates that are gathering. Moreover, the homies can schedule a tour to house, schedule a dinner to meet up. And connect to property manager.
+Requirements:
+Web application that allows teachers to create quizzes and studends are able to answer them. Both types of users are able to create an account, login, see their results.
 
-APIs:
-- Zillow
-- Calendy
+- 2 types of users >> teachers and students
+- user auth
+- CRUD: questions
+- see quiz results
