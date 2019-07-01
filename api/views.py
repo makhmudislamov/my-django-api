@@ -4,5 +4,5 @@ from .serializers import AssignmentSerializer
 
 
 class AssignmentViewSet(viewsets.ModelViewSet):
-    serializer_class AssignmentSerializer
+    serializer_class = AssignmentSerializer
     queryset = Assignment.objects.all()
