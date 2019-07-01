@@ -45,6 +45,8 @@ export const authLogin = (username, password) => {
         password: password
       })
       .then(res => {
+        console.log(res.data)
+        // saving the user 
         const user = {
           token: res.data.key,
           username,
@@ -62,6 +64,7 @@ export const authLogin = (username, password) => {
   };
 };
 
+// signUp Process
 export const authSignup = (
   username, 
   email, 

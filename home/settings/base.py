@@ -86,9 +86,10 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 AUTH_USER_MODEL = 'users.User'
 
 REST_AUTH_SERIALIZERS = {
-    'USER_DETAILS_SERIALIZER': 'users.serializers.UserSerializer'
+    'USER_DETAILS_SERIALIZER': 'users.serializers.UserSerializer',
+    'TOKEN_SERIALIZER': 'users.serializers.TokenSerializer'
 }
 
 REST_AUTH_REGISTER_SERIALIZERS = {
-    'REGISTER_SERIALIZER': 'users.serializers.CustomeRegisterSerializer',
+    'REGISTER_SERIALIZER': 'users.serializers.CustomRegisterSerializer',
 }

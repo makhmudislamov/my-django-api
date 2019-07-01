@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 // creating Profile class
 class Profile extends React.PureComponent {
     render() {
-        return <div> Hi {this.props.username} </div>
+        return <div> Hi {this.props.username} </div>;
     }
 }
 
