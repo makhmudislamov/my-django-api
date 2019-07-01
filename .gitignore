@@ -229,4 +229,12 @@ Temporary Items
 # Ignore all local history of files
 .history
 
+
+env
+**/*.pyc
+**/__pycache__
+db.sqlite3
+node_modules
+build
+package-lock.json
 # End of https://www.gitignore.io/api/macos,django,python,visualstudiocode
