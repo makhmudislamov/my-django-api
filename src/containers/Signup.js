@@ -1,10 +1,11 @@
 import React from "react";
-import { Form, Input, Icon, Button, Select, Option } from "antd";
+import { Form, Input, Icon, Button, Select } from "antd";
 import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
 import * as actions from "../store/actions/auth";
 
 const FormItem = Form.Item;
+const Option = Select.Option;
 
 class RegistrationForm extends React.Component {
   state = {
@@ -15,7 +16,7 @@ class RegistrationForm extends React.Component {
     e.preventDefault();
     this.props.form.validateFieldsAndScroll((err, values) => {
       if (!err) {
-        let is_student = False;
+        let is_student = false;
         if (values.userType === 'student') is_student = true;
         this.props.onAuth(
           values.userName,
