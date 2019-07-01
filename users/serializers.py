@@ -14,3 +14,7 @@ class CustomeRegisterSerializer(RegisterSerializer):
     class Meta:
         model = User
         fields = ('email', 'username', 'password', 'is_student', 'is_teacher')
+
+# overriding save method
+    def save(self, request):
+        print(request)
