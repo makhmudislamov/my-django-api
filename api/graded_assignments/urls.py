@@ -1,6 +1,8 @@
-from rest_framework.routers import DefaultRouter
-# from .views import UserViewSet
+from api.views import GradedAssignmentListView, GradedAssignmentCreateView
+from django.urls import path
 
-router = DefaultRouter()
-# router.register(r'', UserViewSet, base_name='users')
-urlpatterns = router.urls
+
+urlpatterns = [
+    path('', GradedAssignmentListView.as_view()),
+    path('create/', GradedAssignmentCreateView.as_view())
+]
