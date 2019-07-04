@@ -38,6 +38,13 @@ python manage.py test users
 python manage.py test api
 ```
 
+## Integrated Open Source App
+
+Django React Boilerplate
+```
+https://github.com/justdjango/django-react-boilerplate
+```
+
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
